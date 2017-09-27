@@ -1,0 +1,25 @@
+{
+  "name": "react-validator-ease",
+  "version": "0.0.8",
+  "description": "react-validator in your react appliction is so ease",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --single-quote --no-semi --trailing-comma all --write --print-width 80 ./*/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febobo/react-validator.git"
+  },
+  "keywords": [
+    "react",
+    "validator",
+    "simple"
+  ],
+  "author": "a584516601@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/febobo/react-validator/issues"
+  },
+  "homepage": "https://github.com/febobo/react-validator#readme"
+}
