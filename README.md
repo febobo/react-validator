@@ -1,25 +1,26 @@
 # react-validator
 react-validator in your react appliction is so ease
 
-
+# Preview
+![demo](http://g.recordit.co/l8acHx5Dsc.gif)
 # Install
 
 `npm install react-validator-ease` or `yarn install react-validator-ease`
 
 # Usege
 
-> link
+- link
 
 `const ReactValidator from 'react-valid-ease'`
 
-> es5
+- es5
 ```js
 componentWillMount: function() {
   this.validator = new ReactValidator();
 },
 ```
 
-> es6
+- es6
 
 ```js
 constructor() {
@@ -27,7 +28,7 @@ constructor() {
 }
 ```
 
-> jsx 
+- jsx 
 
 ```jsx 
 render: function() {
