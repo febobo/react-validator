@@ -1,17 +1,22 @@
 # react-validator
 react-validator in your react appliction is so ease
 
-# Preview
+### Preview
 ![demo](http://g.recordit.co/l8acHx5Dsc.gif)
-# Install
 
-`npm install react-validator-ease` or `yarn install react-validator-ease`
+### Install
 
-# Usege
+```
+npm install react-validator-ease` or `yarn install react-validator-ease
+```
+
+### Usege
 
 - link
 
-`const ReactValidator from 'react-valid-ease'`
+```bash
+const ReactValidator from 'react-valid-ease'
+```
 
 - es5
 ```js
@@ -60,4 +65,27 @@ constructor() {
     );
   }
 ```
+
+* The message method have five arguments
+  - Field: Name: A unique string
+  - Value: Current field value
+  - Rules: Rules string, support use pipe separated
+  - Custom ClassName: ClassName string, your can custom you errorMessage style
+  - Custom Error Message: your can custom you errorMessage text
+
+
+### Rules 
+
+Examples: `require|min:6|min:12`
+
+|Rule|Description|
+|---|---|
+|require|must be a valid input|
+|email|must be a valid email address|
+|max|may not be greater than max characters|
+|min|may not be greater than mix characters|
+|number|must be a number|
+|phone|must be a valid phone number|
+|url|must be a valid url|
+|accepted|must be a valid Boolean|
 
