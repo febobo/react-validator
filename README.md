@@ -30,17 +30,33 @@ constructor() {
 > jsx 
 
 ```jsx 
-render: function() {
-  return (
-    <div className="container">
-      <div className="form-group">
-        <label>react-validator</label>
-        <textarea className="form-control" value={this.state.code}  />
-        {/*   This is where the magic happens     */}
-        {this.validator.message('review', this.state.code, 'required|min:20|max:120', false, {min: 'Custom min error'})}
+  render: function() {
+    return (
+      <div className="container card my-4">
+        <div className="card-block">
+          <h3>Example Form</h3>
+
+          <div className="form-group">
+            <label>email</label>
+            <input className="form-control" name="email" value={this.state.email} onChange={this.setStateFromInput} />
+            {this.validator.message('email', this.state.email, 'required|email','',{
+              required: 'email不能为空',
+              email: 'email 格式不正确'
+            })}
+          </div>
+          <div className="form-group">
+            <label>required</label>
+            <input className="form-control" name="required" value={this.state.require} onChange={this.setStateFromInput} />
+            {this.validator.message('required', this.state.required, 'required|max:12|min:6','',{
+              default: 'required不能为空',
+              min: '不能少于6个字符',
+              max: '不能大于12个字符'
+            })}
+          </div>
+          <button className="btn btn-primary" onClick={this.submitForm}>Submit</button>
+        </div>
       </div>
-      <button className="btn btn-primary" onClick={this.submitForm}>Save example</button>
-    </div>
-  );
-},
+    );
+  }
 ```
+

@@ -5,6 +5,7 @@
   "main": "./src/react-validator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base example",
     "prettier": "prettier --single-quote --no-semi --trailing-comma all --write --print-width 80 ./*/*.js"
   },
   "repository": {
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/febobo/react-validator/issues"
   },
-  "homepage": "https://github.com/febobo/react-validator#readme"
+  "homepage": "https://github.com/febobo/react-validator#readme",
+  "devDependencies": {
+    "webpack-dev-server": "^2.9.1",
+    "webpack": "^3.6.0"
+  }
 }
