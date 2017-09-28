@@ -18,6 +18,22 @@ const utils = {
     email: {
       message: 'The :attribute must be a valid email address',
       rule: val => utils.testRegex(val, /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i), 
+    },
+    number: {
+      message: 'The :attribute must be a number', 
+      rule: (val) => utils.testRegex(val,/^\d+.?\d*$/)
+    },
+    phone: {
+      message: 'The :attribute must be a valid phone number', 
+      rule: (val) => utils.testRegex(val,/^1[3|5|7|8]\d{9}/)  
+    },
+    url: {
+      message: 'The :attribute must be a valid url', 
+      rule: (val) => utils.testRegex(val,/^(https?|ftp):\/\/(-\.)?([^\s/?\.#-]+\.?)+(\/[^\s]*)?$/i)  
+    },
+    accepted: {
+      message: 'The :attribute must be a accepted', 
+      rule: (val) => val === true  
     }
   },
 }
